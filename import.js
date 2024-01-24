@@ -17,13 +17,13 @@ const isObject = (item) => {
 };
 
 const isSubcollection = (value) => {
-  return Array.isArray(value) && value.every(item => isObject(item));
+  return isObject(value) && value._isSubcollection === true;
 };
 
 const addSubcollections = async (docRef, documentData) => {
   for (const [key, value] of Object.entries(documentData)) {
     if (isSubcollection(value)) {
-      for (let subDoc of value) {
+      for (let subDoc of value.data) {
         await docRef.collection(key).add(subDoc);
       }
     }
