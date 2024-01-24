@@ -1,0 +1,58 @@
+{
+  "animals": [
+    {
+      "name": "Lion",
+      "characteristics": {
+        "type": "Mammal",
+        "diet": "Carnivore"
+      },
+      "habitats": ["Savanna", "Grasslands"],
+      "sightings": [
+        {
+          "location": "Serengeti",
+          "date": "2022-07-21"
+        },
+        {
+          "location": "Maasai Mara",
+          "date": "2022-08-15"
+        }
+      ]
+    },
+    {
+      "name": "Penguin",
+      "characteristics": {
+        "type": "Bird",
+        "diet": "Carnivore"
+      },
+      "habitats": ["Antarctica", "Coastal Regions"],
+      "sightings": [
+        {
+          "location": "Antarctic Peninsula",
+          "date": "2022-05-30"
+        },
+        {
+          "location": "South Shetland Islands",
+          "date": "2022-06-20"
+        }
+      ]
+    }
+  ],
+  "fruits": [
+    {
+      "name": "apple",
+      "color": "green"
+    },
+    {
+      "name": "apple",
+      "color": "red"
+    },
+    {
+      "name": "grape",
+      "color": "green"
+    },
+    {
+      "name": "grape",
+      "color": "red"
+    }
+  ]
+}
